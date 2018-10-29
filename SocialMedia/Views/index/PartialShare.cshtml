@@ -1,0 +1,85 @@
+﻿@model IEnumerable<SocialMedia.Entity.Models.Share>
+
+@foreach (var item in Model)
+{
+    <div class="box box-widget">
+        <div class="box-header with-border">
+            <div class="user-block">
+                <img class="img-circle" src="@item.User.UserPicture" alt="User Image">
+                <span class="username"><a href="#">@item.User.Name @item.User.Surname</a></span>
+                <span class="description">@item.Date</span>
+            </div>
+       
+            <!-- /.user-block -->
+            <div class="box-tools">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                    <i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+            <!-- /.box-tools -->
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div class="col-md-12">
+                @foreach (var file in item.ShareFiles)
+                {
+                    <img class="img" src="@file.Link" alt="User Avatar" style="max-width:100%">
+                }
+            </div>
+            <div class="col-md-12">
+                <p>
+                    @item.Explain
+                </p>
+            </div>
+            <!-- post text -->
+            
+            <ul class="list-inline">
+                <li><a href="#" class="link-black text-sm"><i class="fa fa-share margin-r-5"></i> Paylaş</a></li>
+                <li>
+                    <a href="/index/Like/?shareId=@item.ShareID" class="link-black text-sm"><i class="fa fa-thumbs-o-up margin-r-5"></i> Beğen (@item.Likes.Count)</a>
+                </li>
+                <li class="pull-right">
+                    <a href="#" class="link-black text-sm">
+                        <i class="fa fa-comments-o margin-r-5"></i> Yorumlar (@item.Comments.Count)
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer box-comments">
+            
+            @foreach (var comment in item.Comments)
+            {
+                <div class="box-comment">
+                    <!-- User image -->
+                    <img class="img-circle img-sm" src="@comment.User.UserPicture" alt="User Image">
+                    <div class="comment-text">
+                        <span class="username">
+                            @comment.User.Name @comment.User.Surname
+                            <span class="text-muted pull-right">@comment.Date</span>
+                        </span><!-- /.username -->
+                        @comment.Explain
+                    </div>
+                    <!-- /.comment-text -->
+                </div>
+            }
+        </div>
+
+        <div class="box-footer">
+            @using (Html.BeginForm("Comment", "index", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <img class="img-responsive img-circle img-sm" src="@Session["SNPicture"]" alt="Alt Text">
+                <div class="img-push">
+                    <div class="input-group">
+                        <input type="hidden" name="ShareID" id="ShareID" value="@item.ShareID"/>
+                        <input type="text" id="Explain" name="Explain" placeholder="yorum yaz..." class="form-control">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-primary btn-flat">Gönder</button>
+                        </span>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}

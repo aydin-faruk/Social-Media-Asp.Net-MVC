@@ -1,0 +1,81 @@
+﻿@model SocialMedia.Entity.Models.User
+
+@{
+    ViewBag.Title = "EditProfil";
+}
+
+<div class="col-md-9">
+
+    <div class="box box-widget widget-user">
+        <!-- Add the bg color to the header using any of the bg-* classes -->
+        <div class="widget-user-header bg-black" style="background: url('../../Content/dist/img/photo1.png') center center;">
+            <h3 class="widget-user-username">@Session["SNName"] @Session["SNSurName"]</h3>
+        </div>
+        <div class="widget-user-image">
+            <img class="img-circle" src="@Session["SNPicture"]" alt="User Avatar">
+        </div>
+    </div>
+    <div class="box box-primary">
+        @using (Html.BeginForm("EditProfil", "Profil", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div class="box-body">
+                <div class="form-group" style="display:none;">
+                    <label>ID</label>
+                    @Html.HiddenFor(x => x.UserID);
+                </div>
+                <div class="form-group">
+                    <label>Ad</label>
+                    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Soyad</label>
+                    @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Kullanıcı adı</label>
+                    @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Mail</label>
+                    @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Şifre</label>
+                    @Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Hakkında</label>
+                    @Html.TextBoxFor(x => x.About, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Nerede Okuyorsun?</label>
+                    @Html.TextBoxFor(x => x.School, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Nerede Çalışıyorsun?</label>
+                    @Html.TextBoxFor(x => x.Company, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Nerede Yaşıyorsun?</label>
+                    @Html.TextBoxFor(x => x.City, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Memleketin Neresi?</label>
+                    @Html.TextBoxFor(x => x.Hometown, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group">
+                    <label>Profil Fotoğrafı Yükle</label>
+                    <input type="file" name="image" id='image'>
+                </div>
+            </div>
+                <!-- /.box-body -->
+            <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+        }
+    </div>
+
+</div>
+

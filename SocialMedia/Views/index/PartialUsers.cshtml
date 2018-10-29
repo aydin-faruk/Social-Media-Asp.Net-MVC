@@ -1,0 +1,43 @@
+﻿@model IEnumerable<SocialMedia.Entity.PocoModels.PocoNoFollowUser>
+
+@foreach (var item in Model)
+{
+    <div class="box box-primary">
+        <div class="box box-widget widget-user-2">
+            <div class="widget-user-header">
+                <div style="text-align:right; margin: -15px -15px 0 0;">
+                    <button type="button" class="btn btn-box-tool" data-widget="remove" style="font-size: 13px;"><i class="fa fa-times"></i></button>
+                </div>
+                <div style="margin-top:-13px;">
+                    <div class="widget-user-image">
+                        <img style="margin-top: -7px;" class="img-circle" src="@item.userPicture" alt="@item.userName @item.userSurname">
+                    </div>
+                    <div>
+                        <h3 style="font-size:20px;" class="widget-user-username">@item.userName @item.userSurname</h3>
+                        <form action="/index/PartialUsers/?userId=@item.userID" method="post">
+                            <button type="submit" style="margin-left: 10px;" class="btn btn-primary btn-xs">Takip Et</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@*<div class="box box-primary">
+    <div class="box box-widget widget-user-2">
+        <div class="widget-user-header">
+            <div style="text-align:right; margin: -15px -15px 0 0;">
+                <button type="button" class="btn btn-box-tool" data-widget="remove" style="font-size: 13px;"><i class="fa fa-times"></i></button>
+            </div>
+            <div style="margin-top:-13px;">
+                <div class="widget-user-image">
+                    <img style="margin-top: -7px;" class="img-circle" src="~/Content/dist/img/profil-128.jpg" alt="User Avatar">
+                </div>
+                <div>
+                    <a href="#"><h3 style="font-size:20px;" class="widget-user-username">(test) Faruk AYDIN</h3></a>
+                    <button style="margin-left: 10px;" class="btn btn-primary btn-xs">Takip Et</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@

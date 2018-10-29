@@ -1,0 +1,12 @@
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Dal\bin\Debug\SocialMedia.Dal.dll.config
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Dal\bin\Debug\SocialMedia.Dal.dll
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Dal\bin\Debug\SocialMedia.Dal.pdb
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Dal\bin\Debug\EntityFramework.dll
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Dal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Dal\bin\Debug\SocialMedia.Entity.dll
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Dal\bin\Debug\SocialMedia.Entity.pdb
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Dal\bin\Debug\EntityFramework.xml
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Dal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Dal\obj\Debug\SocialMedia.Dal.csprojResolveAssemblyReference.cache
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Dal\obj\Debug\SocialMedia.Dal.dll
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Dal\obj\Debug\SocialMedia.Dal.pdb

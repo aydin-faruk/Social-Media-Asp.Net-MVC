@@ -1,0 +1,13 @@
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Bll\bin\Debug\SocialMedia.Bll.dll
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Bll\bin\Debug\SocialMedia.Bll.pdb
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Bll\bin\Debug\SocialMedia.Dal.dll
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Bll\bin\Debug\SocialMedia.Entity.dll
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Bll\bin\Debug\SocialMedia.Interfaces.dll
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Bll\bin\Debug\EntityFramework.dll
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Bll\bin\Debug\SocialMedia.Dal.pdb
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Bll\bin\Debug\SocialMedia.Entity.pdb
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Bll\bin\Debug\SocialMedia.Interfaces.pdb
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Bll\bin\Debug\EntityFramework.xml
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Bll\obj\Debug\SocialMedia.Bll.csprojResolveAssemblyReference.cache
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Bll\obj\Debug\SocialMedia.Bll.dll
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Bll\obj\Debug\SocialMedia.Bll.pdb

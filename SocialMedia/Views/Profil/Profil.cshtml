@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Profil";
+}
+
+<div class="col-md-9">
+
+    <div class="box box-widget widget-user">
+        <!-- Add the bg color to the header using any of the bg-* classes -->
+        <div class="widget-user-header bg-black" style="background: url('../../Content/dist/img/photo1.png') center center;">
+            <h3 class="widget-user-username">@Session["SNName"] @Session["SNSurName"]</h3>
+            <h5 class="widget-user-desc"><a href="/Profil/EditProfil/?userId=@Convert.ToInt32(Session["SNUserID"])"><button class="btn btn-success">Profili Düzenle</button></a></h5>
+        </div>
+        <div class="widget-user-image">
+            <img class="img-circle" src="@Session["SNPicture"]" alt="User Avatar">
+        </div>
+    </div>
+
+    <div class="col-md-7">
+        @Html.Action("PartialShare", "Profil")
+    </div>
+    <div class="col-md-5">
+        @Html.Action("PartialFollow", "Profil")
+    </div>
+</div>
+

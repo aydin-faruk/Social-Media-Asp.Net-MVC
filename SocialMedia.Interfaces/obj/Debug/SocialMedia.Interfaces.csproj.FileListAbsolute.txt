@@ -1,0 +1,7 @@
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Interfaces\bin\Debug\SocialMedia.Interfaces.dll
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Interfaces\bin\Debug\SocialMedia.Interfaces.pdb
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Interfaces\bin\Debug\SocialMedia.Entity.dll
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Interfaces\bin\Debug\SocialMedia.Entity.pdb
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Interfaces\obj\Debug\SocialMedia.Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Interfaces\obj\Debug\SocialMedia.Interfaces.dll
+C:\Users\aydin\Documents\Visual Studio 2015\Projects\SocialMedia\SocialMedia.Interfaces\obj\Debug\SocialMedia.Interfaces.pdb
